@@ -1,52 +1,152 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta lang="en">
-		<meta name="theme-color" content="#ff0000">
-		<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
-		<title>AAOS - Parked</title>
-		<link rel="icon" type="image/png" href="https://cdn.aprox.us/img/aprox3/aproxiconred.png">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
-		<style type="text/css">
-			body {
-				background: rgb(255,255,255);
-				background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 100%);
-				background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 100%);
-				background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(218,218,218,1) 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dadada",GradientType=1);
-				margin: 0;
-				padding: 0;
-			} small {
-				font-family: 'Roboto Mono', monospace;
-			} h1 {
-				font-family: 'Montserrat', sans-serif;
-			} img {
-				width: 250px;
-				font-size: 10vw;
-			} div {
-				width: 100vw;
-				background: #ff0000;
-			} div h1 {	
-				font-size: 48pt;
-				color: #000000;
-				margin: 0;
-				padding: 20px;
-			}
-		</style>
-	</head>
-	<body>
-		<br>
-		<center><h1><img src="https://cdn.aprox.us/img/aprox3/aproxlogoblkhires.png" alt="///APROX"></h1></center>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<div><center><h1>Parked</h1></center></div>
-		<br>
-		<center><small>Copyright &copy; APROX Project 2020 | All Rights Reserved | Local Contact: +1 (607) 205-8520‬</small></center>
-	</body>
+<html lang="en">
+    <head>
+        <base href="/" />
+        <title>KPNC Offline</title>
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#1473FC" />
+        <meta name="author" content="KPNC Technology" />
+        <meta name="description" content="KPNC Parked Website" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+        <meta name="keywords" content="KPNC Technology, KPNC, Ripperoni, Dynamic, Ripperoni, Rejuvenate" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://content.kpnc.io/" rel="preconnect" crossorigin />
+        <script src="https://content.kpnc.io/lib/jquery/jquery.min.js"></script>
+        <link href="https://content.kpnc.io/css/montserrat.css" rel="stylesheet" />
+        <link href="https://content.kpnc.io/img/kpnc/favicon.png" rel="icon" />
+    </head>
+    <body>
+        <header>
+            <div id="hf" class="container unsel">
+                <a href="https://www.kpnc.io/" class="logo"><img src="https://content.kpnc.io/img/kpnc/logodark.webp" alt="~KPNC~" />&shy;</a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="https://status.kpnc.io/">Status</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="hl" class="container unsel">
+                <a href="https://www.kpnc.io/" class="logo"><img src="https://content.kpnc.io/img/kpnc/logodark.webp" alt="~KPNC~" />&shy;</a>
+            </div>
+        </header>
+        <style>
+            header {
+                height: 50px;
+                backdrop-filter: blur(5px);
+                border-bottom: 1px solid white;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            header a {
+                color: white;
+                text-decoration: none;
+                transform: translateY(13px);
+            }
+            header a.logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            header a.logo img {
+                height: 33px;
+                transition: 200ms;
+                transform: translateY(9px);
+                border-bottom: 0px solid transparent;
+            }
+            header a.logo img:hover {
+                transition: 200ms;
+                border-bottom: 5px solid #1473FC;
+            }
+            header nav {
+                float: right;
+                display: block;
+            }
+            header nav ul {
+                margin: 0;
+                display: flex;
+                list-style-type: none;
+            }
+            header nav ul li a {
+                display: flex;
+                margin: 0 0.8em;
+                transition: 200ms;
+                border-bottom: 0px solid transparent;
+            }
+            header nav ul li a:hover {
+                transition: 200ms;
+                border-bottom: 5px solid #1473FC;
+            }
+            #hl a img {
+                margin: 0;
+                top: 10px;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%);
+            }
+            .hero {
+                height: calc(100vh - 50px - 30vh);
+            }
+            .hero h1 {
+                margin-top: 30vh;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                font-size: min(15vw, 70px);
+                animation: float 5s ease infinite both;
+            }
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(20px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                color: white;
+                max-width: 100%;
+                font-size: 18px;
+                overflow: hidden;
+                background-size: cover;
+                scroll-behavior: smooth;
+                background-color: black;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family: "Montserrat", "Roboto", "Arial", sans-serif;
+            }
+            .container {
+                width: 85%;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+            .unsel {
+                user-select: none;
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+            }
+        </style>
+        <div class="container unsel hero"><h1>KPNC Technology is offline...</h1></div>
+        <script>
+            function resizer() {
+                if (window.innerWidth < 390) {
+                    $("#hf").hide();
+                    $("#hl").show();
+                } else {
+                    $("#hf").show();
+                    $("#hl").hide();
+                }
+            }
+            $(window).on("resize", resizer);
+            resizer();
+            document.body.style.backgroundImage = "url('https://content.kpnc.io/img/stock/bg." + Math.floor(Math.random() * 10 + 1) + ".webp')";
+        </script>
+    </body>
 </html>
