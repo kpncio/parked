@@ -1,3 +1,3 @@
 # KPNC Parked
 
-KPNC Technology: Default parked webpage.
+KPNC Technology: A simple placeholder webpage.
